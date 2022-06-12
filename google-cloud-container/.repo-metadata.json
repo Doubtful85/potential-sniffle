@@ -1,0 +1,5 @@
+{
+    "name": "container",
+    "language": "ruby",
+    "distribution_name": "google-cloud-container"
+}

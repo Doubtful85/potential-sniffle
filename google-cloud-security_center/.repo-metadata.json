@@ -1,0 +1,5 @@
+{
+    "name": "securitycenter",
+    "language": "ruby",
+    "distribution_name": "google-cloud-security_center"
+}
