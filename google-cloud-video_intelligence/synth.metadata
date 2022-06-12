@@ -1,0 +1,69 @@
+{
+  "updateTime": "2019-10-12T10:47:46.385242Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.39.0",
+        "dockerImage": "googleapis/artman@sha256:72554d0b3bdc0b4ac7d6726a6a606c00c14b454339037ed86be94574fb05d9f3"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "af8dd2c1750558b538eaa6bdaa3bc899079533ee",
+        "internalRef": "274260771"
+      }
+    },
+    {
+      "template": {
+        "name": "ruby_library",
+        "origin": "synthtool.gcp",
+        "version": "2019.5.2"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "videointelligence",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/videointelligence/artman_videointelligence_v1.yaml"
+      }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "videointelligence",
+        "apiVersion": "v1p1beta1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/videointelligence/artman_videointelligence_v1p1beta1.yaml"
+      }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "videointelligence",
+        "apiVersion": "v1p2beta1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/videointelligence/artman_videointelligence_v1p2beta1.yaml"
+      }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "videointelligence",
+        "apiVersion": "v1beta2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/videointelligence/artman_videointelligence_v1beta2.yaml"
+      }
+    }
+  ]
+}
