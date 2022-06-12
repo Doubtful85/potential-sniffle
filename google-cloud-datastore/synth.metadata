@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "2.0.0",
+        "dockerImage": "googleapis/artman@sha256:b3b47805231a305d0f40c4bf069df20f6a2635574e6d4259fac651d3f9f6e098"
+      }
+    },
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "854c1f9487ec91f896c6f9f08fc14f0532bbce33"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "1b5a8d2bbb69c5a04db26bd546d2888e609c6bab",
+        "internalRef": "309845930"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "datastore",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/datastore/artman_datastore.yaml"
+      }
+    }
+  ]
+}

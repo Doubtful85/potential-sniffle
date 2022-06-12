@@ -1,0 +1,5 @@
+{
+    "language": "ruby",
+    "distribution_name": "google-cloud-redis",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-redis/latest"
+}
