@@ -1,0 +1,32 @@
+{
+  "updateTime": "2020-04-09T00:58:24.455136Z",
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "fdbbfe60828ffa93e758ff654041ed620b260ed8"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "744591190e828440f72745aef217f883afd1fd71",
+        "internalRef": "305323909",
+        "log": "744591190e828440f72745aef217f883afd1fd71\ndocs: change relative URLs to absolute URLs to fix broken links.\n\nPiperOrigin-RevId: 305323909\n\n1247c135ceaedfe04261d27a64aaecf78ffbae74\nchore: enable gapicv2 for videointelligence/v1beta2 API\n\nCommitter: @miraleung\nPiperOrigin-RevId: 305321976\n\n633c8b13227b9e3810749964d580e5be504db488\nchore: enable gapicv2 for videointelligence/v1p1beta1 API\n\nCommitter: @miraleung\nPiperOrigin-RevId: 305320877\n\n29aac60f121dc43382b37ff92f2dbb692d94143a\ndocs: fix broken link to policy reference documentation.\n\nPiperOrigin-RevId: 305319540\n\n54ddbbf14c489b8a2f0731aa39408c016f5a8387\nbazel: update gapic-generator-go to v0.13.0\n\nChanges include:\n* add clientHook feature\n\nPiperOrigin-RevId: 305289945\n\n"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "dataproc",
+        "apiVersion": "v1beta2",
+        "language": "ruby",
+        "generator": "gapic-generator-ruby"
+      }
+    }
+  ]
+}
