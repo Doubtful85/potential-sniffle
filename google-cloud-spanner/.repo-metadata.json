@@ -1,0 +1,7 @@
+{
+    "name": "spanner",
+    "language": "ruby",
+    "distribution_name": "google-cloud-spanner",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-spanner/latest",
+    "library_type": "GAPIC_MANUAL"
+}
