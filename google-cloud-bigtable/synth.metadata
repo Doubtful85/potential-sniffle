@@ -1,0 +1,42 @@
+{
+  "updateTime": "2019-09-20T10:37:17.664861Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.36.3",
+        "dockerImage": "googleapis/artman@sha256:66ca01f27ef7dc50fbfb7743b67028115a6a8acf43b2d82f9fc826de008adac4"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "44e588d97e7497dff01107d39b6a19062f9a4ffa",
+        "internalRef": "270200097"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "bigtable",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/bigtable/artman_bigtable.yaml"
+      }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "bigtableadmin",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/bigtable/admin/artman_bigtableadmin.yaml"
+      }
+    }
+  ]
+}

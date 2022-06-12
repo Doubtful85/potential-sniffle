@@ -1,0 +1,18 @@
+{
+    "bundler": {
+        "enabled": true
+    },
+    "extends": [
+        "config:base"
+    ],
+    "ignoreDeps": [
+        "rubocop"
+    ],
+    "packageRules": [
+        {
+            "languages": [
+                "ruby"
+            ]
+        }
+    ]
+}
