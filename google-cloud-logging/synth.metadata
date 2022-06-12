@@ -1,0 +1,32 @@
+{
+  "updateTime": "2019-05-11T10:39:37.629382Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.19.0",
+        "dockerImage": "googleapis/artman@sha256:d3df563538225ac6caac45d8ad86499500211d1bcb2536955a6dbda15e1b368e"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "32b08107fa1710f46287c17d5bb2016e443ed3ba",
+        "internalRef": "247684466"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "logging",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/logging/artman_logging.yaml"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "updateTime": "2019-05-30T00:53:14.681155Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.21.0",
+        "dockerImage": "googleapis/artman@sha256:28d4271586772b275cd3bc95cb46bd227a24d3c9048de45dccdb7f3afb0bfba9"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "1079c999f0683196d857795ae6951ced9e15ce72",
+        "internalRef": "250569499"
+      }
+    },
+    {
+      "template": {
+        "name": "ruby_library",
+        "origin": "synthtool.gcp",
+        "version": "2019.5.2"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "bigquery/datatransfer",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/bigquery/datatransfer/artman_bigquerydatatransfer.yaml"
+      }
+    }
+  ]
+}
