@@ -1,0 +1,40 @@
+inherit_gem:
+  google-style: google-style.yml
+
+AllCops:
+  Exclude:
+    - "acceptance/**/*"
+    - "conformance/**/*"
+    - "lib/**/*_pb.rb"
+    - "lib/google/cloud/bigtable/admin.rb"
+    - "lib/google/cloud/bigtable/admin/**/*"
+    - "lib/google/cloud/bigtable/v2.rb"
+    - "lib/google/cloud/bigtable/v2/**/*"
+    - "samples/**/*"
+    - "support/**/*"
+    - "test/**/*"
+
+Documentation:
+  Exclude:
+    - "lib/google-cloud-bigtable.rb"
+
+Metrics/ClassLength:
+  Exclude:
+    - "lib/google/cloud/bigtable/chunk_processor.rb"
+    - "lib/google/cloud/bigtable/column_family_map.rb"
+    - "lib/google/cloud/bigtable/instance.rb"
+    - "lib/google/cloud/bigtable/project.rb"
+    - "lib/google/cloud/bigtable/service.rb"
+    - "lib/google/cloud/bigtable/table.rb"
+Metrics/BlockLength:
+  Exclude:
+    - "google-cloud-bigtable.gemspec"
+    - "Rakefile"
+    - "lib/google-cloud-bigtable.rb"
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-bigtable.rb"
+Style/PreferredHashMethods:
+  Exclude:
+    # Google::Protobuf::Map does not have key?, but uses has_key?
+    - "lib/google/cloud/bigtable/column_family_map.rb"
