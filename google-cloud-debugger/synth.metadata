@@ -1,0 +1,32 @@
+{
+  "updateTime": "2019-04-21T10:38:48.627263Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.16.26",
+        "dockerImage": "googleapis/artman@sha256:314eae2a40f6f7822db77365cf5f45bd513d628ae17773fd0473f460e7c2a665"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "3369c803f56d52662ea3792076deb8545183bdb0",
+        "internalRef": "244282812"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "debugger",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/devtools/artman_clouddebugger.yaml"
+      }
+    }
+  ]
+}
