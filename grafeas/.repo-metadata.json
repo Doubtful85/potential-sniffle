@@ -1,0 +1,9 @@
+{
+    "client_documentation": "https://googleapis.dev/ruby/grafeas/latest",
+    "distribution_name": "grafeas",
+    "language": "ruby",
+    "name_pretty": "Grafeas API",
+    "product_documentation": "https://grafeas.io",
+    "repo": "googleapis/google-cloud-ruby",
+    "requires_billing": true
+}
