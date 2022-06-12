@@ -1,0 +1,52 @@
+<div class="section-links">
+  <% if current.type == 'class' %>
+    <div>
+      Parent:
+      <% if current.superclass and not String === current.superclass %>
+        <a href="<%= current.aref_to current.superclass.path %>"><%= current.superclass.full_name %></a>
+      <% else %>
+        <%= current.superclass %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% if current.includes.any? %>
+    <div>
+      Included Modules:
+      <% current.each_include do |inc| %>
+        <% unless String === inc.module %>
+          <a href="<%= current.aref_to inc.module.path %>"><%= inc.module.full_name %></a>
+        <% else %>
+          <%= inc.name %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% current.each_section do |section, constants, attributes| %>
+    <% if show_section? section, attributes %>
+      <div>
+        <%= section.title %> Methods:
+
+        <% attributes = attributes.select { |attr| attr.display? } %>
+        <% if attributes.any? %>
+          <% attributes.each do |attrib| %>
+            <a href="#<%= attrib.aref %>"><%= h attrib.name %></a>
+          <% end %>
+        <% end %>
+
+        <% current.methods_by_type(section).each do |type, visibilities|
+           next if visibilities.empty?
+           visibilities.each do |visibility, methods|
+            next unless visibility == :public
+            next if methods.empty? %>
+            <% methods.each do |method| %>
+              <a href="#<%= method.aref %>"><%= h method.name %></a>
+            <% end %>
+          <% end %>
+        <% end %>
+
+      </div>
+    <% end %>
+  <% end %>
+</div>

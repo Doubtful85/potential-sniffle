@@ -1,0 +1,95 @@
+<%
+def current_class path
+  " current" if path == current.path
+end
+%>
+<div class="side-nav--meta">
+  <div id="doc-build-date">
+    Docs built on <%= build_date.strftime "%b %d, %Y" %>.
+  </div>
+</div>
+
+<ul>
+  <h4 class="list-item--heading">Getting Started</h4>
+  <li class="toc-l0"><a class="reference internal<%= current_class "index.html" %>" href="<%= l "index.html" %>">Overview</a></li>
+  <%
+  side_config["pages"].each do |side|
+    page = store.all_files.select(&:text?).find { |p| p.full_name == side["full_name"] }
+    if page && side["ignore"] != true
+  %>
+    <li class="toc-l0"><a class="reference internal<%= current_class page.path %>" href="<%= l page.full_name %>"><%= side["name"] %></a></li>
+  <%
+    end
+  end
+  # Now for the files that aren't in the config
+  other_pages = store.all_files.select(&:text?).reject do |page|
+    side_config["pages"].find { |s| s["full_name"] == page.full_name }
+  end.each do |page|
+  %>
+    <li class="toc-l0"><a class="reference internal<%= current_class page.path %>" href="<%= l page.full_name %>"><%= page.full_name %></a></li>
+  <%
+  end
+  %>
+</ul>
+
+<ul>
+  <h4 class="list-item--heading">API</h4>
+  <%
+  side_config["classes"].each do |side|
+    klass = store.all_classes_and_modules.find { |k| k.full_name == side["full_name"] }
+    if klass
+  %>
+      <li class="toc-l0">
+        <a class="reference internal<%= current_class klass.path %>" href="<%= l klass.path %>">
+          <%= side["name"] %>
+        </a>
+      </li>
+      <%
+      if current.full_name.start_with? side["full_name"]
+        Array(side["classes"]).each do |sub|
+          sub_klass = store.all_classes_and_modules.find { |k| k.full_name == sub["full_name"] }
+          if sub_klass
+      %>
+        <li class="toc-l1">
+          <a class="reference internal<%= current_class sub_klass.path %>" href="<%= l sub_klass.path %>">
+            <%= sub["name"] %>
+          </a>
+        </li>
+      <%
+          end
+        end
+      end
+      %>
+  <%
+    end
+  end
+  %>
+  <li class="toc-l0"><a class="reference internal<%= current_class "reference.html" %>" href="<%= l "reference.html" %>">API Reference</a></li>
+</ul>
+
+<ul class="external-links">
+  <li>
+    <a href="https://github.com/GoogleCloudPlatform/gcloud-ruby" title="Github repository">
+      <img src="/gcloud-ruby/img/icon-link-github.svg" alt="Github icon">
+      Github
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/GoogleCloudPlatform/gcloud-ruby/issues" title="Issues on Github">
+      <img src="/gcloud-ruby/img/icon-link-issues.svg" alt="Issues icon">
+      Issues
+    </a>
+  </li>
+  <li>
+    <a href="http://stackoverflow.com/questions/tagged/gcloud-ruby" title="gcloud on StackOverflow">
+      <img src="/gcloud-ruby/img/icon-link-stackoverflow.svg" alt="StackOverflow icon">
+      StackOverflow
+    </a>
+  </li>
+  <li>
+    <a href="http://rubygems.org/gems/gcloud" title="RubyGems" class="ext-link">
+       <img src="/gcloud-ruby/img/icon-link-rubygems.svg" alt="RubyGems icon">
+      RubyGems
+    </a>
+  </li>
+</ul>
