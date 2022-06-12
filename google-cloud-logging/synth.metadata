@@ -1,0 +1,121 @@
+{
+  "updateTime": "2020-02-13T20:11:56.959473Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.45.0",
+        "dockerImage": "googleapis/artman@sha256:6aec9c34db0e4be221cdaf6faba27bdc07cfea846808b3d3b964dfce3a9a0f9b"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "56b55aa8818cd0a532a7d779f6ef337ba809ccbd",
+        "internalRef": "294931650"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "logging",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/logging/artman_logging.yaml"
+      }
+    }
+  ],
+  "newFiles": [
+    {
+      "path": "lib/google/cloud/logging/v2/config_service_v2_client.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/config_service_v2_client_config.json"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/credentials.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/api/distribution.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/api/label.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/api/metric.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/api/monitored_resource.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/logging/type/http_request.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/logging/v2/log_entry.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/logging/v2/logging.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/logging/v2/logging_config.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/logging/v2/logging_metrics.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/protobuf/any.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/protobuf/duration.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/protobuf/empty.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/protobuf/field_mask.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/protobuf/struct.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/doc/google/protobuf/timestamp.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/logging_service_v2_client.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/logging_service_v2_client_config.json"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/metrics_service_v2_client.rb"
+    },
+    {
+      "path": "lib/google/cloud/logging/v2/metrics_service_v2_client_config.json"
+    },
+    {
+      "path": "lib/google/logging/v2/log_entry_pb.rb"
+    },
+    {
+      "path": "lib/google/logging/v2/logging_config_pb.rb"
+    },
+    {
+      "path": "lib/google/logging/v2/logging_config_services_pb.rb"
+    },
+    {
+      "path": "lib/google/logging/v2/logging_metrics_pb.rb"
+    },
+    {
+      "path": "lib/google/logging/v2/logging_metrics_services_pb.rb"
+    },
+    {
+      "path": "lib/google/logging/v2/logging_pb.rb"
+    },
+    {
+      "path": "lib/google/logging/v2/logging_services_pb.rb"
+    }
+  ]
+}

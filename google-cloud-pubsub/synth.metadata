@@ -1,0 +1,33 @@
+{
+  "updateTime": "2020-02-27T11:43:23.771283Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.46.0",
+        "dockerImage": "googleapis/artman@sha256:6248a21fba8f0d618c3b032669cec2618e684b66922bb70391fe08c41b05f6ee"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "dfe1cf7be44dee31d78f78e485d8c95430981d6e",
+        "internalRef": "297497710",
+        "log": "dfe1cf7be44dee31d78f78e485d8c95430981d6e\nPublish `QueryOptions` proto.\n\nIntroduced a `query_options` input in `ExecuteSqlRequest`.\n\nPiperOrigin-RevId: 297497710\n\ndafc905f71e5d46f500b41ed715aad585be062c3\npubsub: revert pull init_rpc_timeout & max_rpc_timeout back to 25 seconds and reset multiplier to 1.0\n\nPiperOrigin-RevId: 297486523\n\nf077632ba7fee588922d9e8717ee272039be126d\nfirestore: add update_transform\n\nPiperOrigin-RevId: 297405063\n\n"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "pubsub",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/pubsub/artman_pubsub.yaml"
+      }
+    }
+  ]
+}
