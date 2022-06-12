@@ -1,0 +1,40 @@
+{
+  "updateTime": "2020-03-12T10:45:25.412184Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "1.1.0",
+        "dockerImage": "googleapis/artman@sha256:f54b7644a1d2e7a37b23f5c0dfe9bba473e41c675002a507a244389e27487ca9"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "34a5450c591b6be3d6566f25ac31caa5211b2f3f",
+        "internalRef": "300474272",
+        "log": "34a5450c591b6be3d6566f25ac31caa5211b2f3f\nIncreases the default timeout from 20s to 30s for MetricService\n\nPiperOrigin-RevId: 300474272\n\n5d8bffe87cd01ba390c32f1714230e5a95d5991d\nfeat: use the latest gapic-generator in WORKSPACE for bazel build.\n\nPiperOrigin-RevId: 300461878\n\nd631c651e3bcfac5d371e8560c27648f7b3e2364\nUpdated the GAPIC configs to include parameters for Backups APIs.\n\nPiperOrigin-RevId: 300443402\n\n678afc7055c1adea9b7b54519f3bdb228013f918\nAdding Game Servers v1beta API.\n\nPiperOrigin-RevId: 300433218\n\n80d2bd2c652a5e213302041b0620aff423132589\nEnable proto annotation and gapic v2 for talent API.\n\nPiperOrigin-RevId: 300393997\n\n85e454be7a353f7fe1bf2b0affb753305785b872\ndocs(google/maps/roads): remove mention of nonexported api\n\nPiperOrigin-RevId: 300367734\n\n"
+      }
+    },
+    {
+      "template": {
+        "name": "ruby_library",
+        "origin": "synthtool.gcp",
+        "version": "2020.2.4"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "talent",
+        "apiVersion": "v4beta1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/talent/artman_talent_v4beta1.yaml"
+      }
+    }
+  ]
+}

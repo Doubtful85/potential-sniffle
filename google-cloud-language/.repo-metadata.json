@@ -1,0 +1,6 @@
+{
+    "name": "language",
+    "language": "ruby",
+    "distribution_name": "google-cloud-language",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-language/latest"
+}
