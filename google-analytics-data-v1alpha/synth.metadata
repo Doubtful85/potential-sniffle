@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "e8045fde897f6e16d106374990d74bc2e513759b"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "54dc383991e3c25c12f9d1883e1b0375b7932f35",
+        "internalRef": "383721241"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "analytics/data",
+        "apiVersion": "v1alpha",
+        "language": "ruby",
+        "generator": "bazel"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    ".yardopts-cloudrad",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "gapic_metadata.json",
+    "google-analytics-data-v1alpha.gemspec",
+    "lib/google-analytics-data-v1alpha.rb",
+    "lib/google/analytics/data/v1alpha.rb",
+    "lib/google/analytics/data/v1alpha/analytics_data.rb",
+    "lib/google/analytics/data/v1alpha/analytics_data/client.rb",
+    "lib/google/analytics/data/v1alpha/analytics_data/credentials.rb",
+    "lib/google/analytics/data/v1alpha/analytics_data/paths.rb",
+    "lib/google/analytics/data/v1alpha/analytics_data_api_pb.rb",
+    "lib/google/analytics/data/v1alpha/analytics_data_api_services_pb.rb",
+    "lib/google/analytics/data/v1alpha/data_pb.rb",
+    "lib/google/analytics/data/v1alpha/version.rb",
+    "proto_docs/README.md",
+    "proto_docs/google/analytics/data/v1alpha/analytics_data_api.rb",
+    "proto_docs/google/analytics/data/v1alpha/data.rb",
+    "proto_docs/google/api/field_behavior.rb",
+    "proto_docs/google/api/resource.rb",
+    "test/google/analytics/data/v1alpha/analytics_data_paths_test.rb",
+    "test/google/analytics/data/v1alpha/analytics_data_test.rb",
+    "test/helper.rb"
+  ]
+}

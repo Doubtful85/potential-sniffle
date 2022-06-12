@@ -1,0 +1,68 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "33de88482a529898d2527ca88568d7e416b30d46"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "54dc383991e3c25c12f9d1883e1b0375b7932f35",
+        "internalRef": "383721241"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "bigquery/storage",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "bazel"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    ".yardopts-cloudrad",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "gapic_metadata.json",
+    "google-cloud-bigquery-storage-v1.gemspec",
+    "lib/google-cloud-bigquery-storage-v1.rb",
+    "lib/google/cloud/bigquery/storage/v1.rb",
+    "lib/google/cloud/bigquery/storage/v1/arrow_pb.rb",
+    "lib/google/cloud/bigquery/storage/v1/avro_pb.rb",
+    "lib/google/cloud/bigquery/storage/v1/big_query_read.rb",
+    "lib/google/cloud/bigquery/storage/v1/big_query_read/client.rb",
+    "lib/google/cloud/bigquery/storage/v1/big_query_read/credentials.rb",
+    "lib/google/cloud/bigquery/storage/v1/big_query_read/paths.rb",
+    "lib/google/cloud/bigquery/storage/v1/storage_pb.rb",
+    "lib/google/cloud/bigquery/storage/v1/storage_services_pb.rb",
+    "lib/google/cloud/bigquery/storage/v1/stream_pb.rb",
+    "lib/google/cloud/bigquery/storage/v1/version.rb",
+    "proto_docs/README.md",
+    "proto_docs/google/api/field_behavior.rb",
+    "proto_docs/google/api/resource.rb",
+    "proto_docs/google/cloud/bigquery/storage/v1/arrow.rb",
+    "proto_docs/google/cloud/bigquery/storage/v1/avro.rb",
+    "proto_docs/google/cloud/bigquery/storage/v1/storage.rb",
+    "proto_docs/google/cloud/bigquery/storage/v1/stream.rb",
+    "proto_docs/google/protobuf/timestamp.rb",
+    "test/google/cloud/bigquery/storage/v1/big_query_read_paths_test.rb",
+    "test/google/cloud/bigquery/storage/v1/big_query_read_test.rb",
+    "test/helper.rb"
+  ]
+}

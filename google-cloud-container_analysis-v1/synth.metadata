@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "33de88482a529898d2527ca88568d7e416b30d46"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "54dc383991e3c25c12f9d1883e1b0375b7932f35",
+        "internalRef": "383721241"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "containeranalysis",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "bazel"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    ".yardopts-cloudrad",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "gapic_metadata.json",
+    "google-cloud-container_analysis-v1.gemspec",
+    "lib/google-cloud-container_analysis-v1.rb",
+    "lib/google/cloud/container_analysis/v1.rb",
+    "lib/google/cloud/container_analysis/v1/container_analysis.rb",
+    "lib/google/cloud/container_analysis/v1/container_analysis/client.rb",
+    "lib/google/cloud/container_analysis/v1/container_analysis/credentials.rb",
+    "lib/google/cloud/container_analysis/v1/container_analysis/paths.rb",
+    "lib/google/cloud/container_analysis/v1/version.rb",
+    "lib/google/devtools/containeranalysis/v1/containeranalysis_pb.rb",
+    "lib/google/devtools/containeranalysis/v1/containeranalysis_services_pb.rb",
+    "proto_docs/README.md",
+    "proto_docs/google/api/field_behavior.rb",
+    "proto_docs/google/api/resource.rb",
+    "proto_docs/google/devtools/containeranalysis/v1/containeranalysis.rb",
+    "proto_docs/google/iam/v1/iam_policy.rb",
+    "proto_docs/google/iam/v1/options.rb",
+    "proto_docs/google/iam/v1/policy.rb",
+    "proto_docs/google/protobuf/timestamp.rb",
+    "proto_docs/google/type/expr.rb",
+    "proto_docs/grafeas/v1/common.rb",
+    "proto_docs/grafeas/v1/cvss.rb",
+    "proto_docs/grafeas/v1/package.rb",
+    "proto_docs/grafeas/v1/vulnerability.rb",
+    "test/google/cloud/container_analysis/v1/container_analysis_paths_test.rb",
+    "test/google/cloud/container_analysis/v1/container_analysis_test.rb",
+    "test/helper.rb"
+  ]
+}
