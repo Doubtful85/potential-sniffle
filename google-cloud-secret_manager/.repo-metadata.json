@@ -1,0 +1,6 @@
+{
+    "name": "secret_manager",
+    "language": "ruby",
+    "distribution_name": "google-cloud-secret_manager",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-secret_manager/latest"
+}
