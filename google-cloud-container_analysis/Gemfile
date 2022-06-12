@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+gemspec
+
+gem "grafeas-client", path: "../grafeas-client"
+gem "rake", "~> 12.0"

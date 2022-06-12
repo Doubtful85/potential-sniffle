@@ -1,0 +1,39 @@
+{
+  "updateTime": "2019-08-22T10:39:14.083908Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.34.0",
+        "dockerImage": "googleapis/artman@sha256:38a27ba6245f96c3e86df7acb2ebcc33b4f186d9e475efe2d64303aec3d4e0ea"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "92bebf78345af8b2d3585220527115bda8bdedf8",
+        "internalRef": "264715111"
+      }
+    },
+    {
+      "template": {
+        "name": "ruby_library",
+        "origin": "synthtool.gcp",
+        "version": "2019.5.2"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "dialogflow",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/dialogflow/artman_dialogflow_v2.yaml"
+      }
+    }
+  ]
+}
