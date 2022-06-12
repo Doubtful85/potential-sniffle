@@ -1,0 +1,20 @@
+inherit_gem:
+  google-style: google-style.yml
+
+AllCops:
+  Exclude:
+    - "google-cloud-monitoring.gemspec"
+    - "lib/google/**/*"
+    - "Rakefile"
+    - "test/**/*"
+    - "acceptance/**/*"
+
+Documentation:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-monitoring.rb"
+
+Layout/EmptyLines: # for the extra line between copyright and code
+  Enabled: false

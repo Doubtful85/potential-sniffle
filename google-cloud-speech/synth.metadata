@@ -1,0 +1,49 @@
+{
+  "updateTime": "2019-11-21T11:42:36.129455Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.42.1",
+        "dockerImage": "googleapis/artman@sha256:c773192618c608a7a0415dd95282f841f8e6bcdef7dd760a988c93b77a64bd57"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "5bc0fecee454f857cec042fb99fe2d22e1bff5bc",
+        "internalRef": "281635572"
+      }
+    },
+    {
+      "template": {
+        "name": "ruby_library",
+        "origin": "synthtool.gcp",
+        "version": "2019.10.17"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "speech",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/speech/artman_speech_v1.yaml"
+      }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "speech",
+        "apiVersion": "v1p1beta1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/speech/artman_speech_v1p1beta1.yaml"
+      }
+    }
+  ]
+}
