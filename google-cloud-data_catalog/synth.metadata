@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "e8907a5b1bc94a01dacf709b83a40cc734704e57"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "a1ab4d44db02d59ff58810c6d4182d84e4b9abaa",
+        "internalRef": "365620142"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "datacatalog",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic-generator-ruby"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    ".yardopts-cloudrad",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "google-cloud-data_catalog.gemspec",
+    "lib/google-cloud-data_catalog.rb",
+    "lib/google/cloud/data_catalog.rb",
+    "lib/google/cloud/data_catalog/version.rb",
+    "test/google/cloud/data_catalog/client_test.rb",
+    "test/google/cloud/data_catalog/version_test.rb",
+    "test/helper.rb"
+  ]
+}

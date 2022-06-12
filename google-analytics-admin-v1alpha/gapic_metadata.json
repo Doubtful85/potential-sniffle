@@ -1,0 +1,258 @@
+{
+  "schema": "1.0",
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods",
+  "language": "ruby",
+  "protoPackage": "google.analytics.admin.v1alpha",
+  "libraryPackage": "::Google::Analytics::Admin::V1alpha",
+  "services": {
+    "AnalyticsAdminService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "::Google::Analytics::Admin::V1alpha::AnalyticsAdminService::Client",
+          "rpcs": {
+            "GetAccount": {
+              "methods": [
+                "get_account"
+              ]
+            },
+            "ListAccounts": {
+              "methods": [
+                "list_accounts"
+              ]
+            },
+            "DeleteAccount": {
+              "methods": [
+                "delete_account"
+              ]
+            },
+            "UpdateAccount": {
+              "methods": [
+                "update_account"
+              ]
+            },
+            "ProvisionAccountTicket": {
+              "methods": [
+                "provision_account_ticket"
+              ]
+            },
+            "ListAccountSummaries": {
+              "methods": [
+                "list_account_summaries"
+              ]
+            },
+            "GetProperty": {
+              "methods": [
+                "get_property"
+              ]
+            },
+            "ListProperties": {
+              "methods": [
+                "list_properties"
+              ]
+            },
+            "CreateProperty": {
+              "methods": [
+                "create_property"
+              ]
+            },
+            "DeleteProperty": {
+              "methods": [
+                "delete_property"
+              ]
+            },
+            "UpdateProperty": {
+              "methods": [
+                "update_property"
+              ]
+            },
+            "GetUserLink": {
+              "methods": [
+                "get_user_link"
+              ]
+            },
+            "BatchGetUserLinks": {
+              "methods": [
+                "batch_get_user_links"
+              ]
+            },
+            "ListUserLinks": {
+              "methods": [
+                "list_user_links"
+              ]
+            },
+            "AuditUserLinks": {
+              "methods": [
+                "audit_user_links"
+              ]
+            },
+            "CreateUserLink": {
+              "methods": [
+                "create_user_link"
+              ]
+            },
+            "BatchCreateUserLinks": {
+              "methods": [
+                "batch_create_user_links"
+              ]
+            },
+            "UpdateUserLink": {
+              "methods": [
+                "update_user_link"
+              ]
+            },
+            "BatchUpdateUserLinks": {
+              "methods": [
+                "batch_update_user_links"
+              ]
+            },
+            "DeleteUserLink": {
+              "methods": [
+                "delete_user_link"
+              ]
+            },
+            "BatchDeleteUserLinks": {
+              "methods": [
+                "batch_delete_user_links"
+              ]
+            },
+            "GetWebDataStream": {
+              "methods": [
+                "get_web_data_stream"
+              ]
+            },
+            "DeleteWebDataStream": {
+              "methods": [
+                "delete_web_data_stream"
+              ]
+            },
+            "UpdateWebDataStream": {
+              "methods": [
+                "update_web_data_stream"
+              ]
+            },
+            "CreateWebDataStream": {
+              "methods": [
+                "create_web_data_stream"
+              ]
+            },
+            "ListWebDataStreams": {
+              "methods": [
+                "list_web_data_streams"
+              ]
+            },
+            "GetIosAppDataStream": {
+              "methods": [
+                "get_ios_app_data_stream"
+              ]
+            },
+            "DeleteIosAppDataStream": {
+              "methods": [
+                "delete_ios_app_data_stream"
+              ]
+            },
+            "UpdateIosAppDataStream": {
+              "methods": [
+                "update_ios_app_data_stream"
+              ]
+            },
+            "CreateIosAppDataStream": {
+              "methods": [
+                "create_ios_app_data_stream"
+              ]
+            },
+            "ListIosAppDataStreams": {
+              "methods": [
+                "list_ios_app_data_streams"
+              ]
+            },
+            "GetAndroidAppDataStream": {
+              "methods": [
+                "get_android_app_data_stream"
+              ]
+            },
+            "DeleteAndroidAppDataStream": {
+              "methods": [
+                "delete_android_app_data_stream"
+              ]
+            },
+            "UpdateAndroidAppDataStream": {
+              "methods": [
+                "update_android_app_data_stream"
+              ]
+            },
+            "CreateAndroidAppDataStream": {
+              "methods": [
+                "create_android_app_data_stream"
+              ]
+            },
+            "ListAndroidAppDataStreams": {
+              "methods": [
+                "list_android_app_data_streams"
+              ]
+            },
+            "GetEnhancedMeasurementSettings": {
+              "methods": [
+                "get_enhanced_measurement_settings"
+              ]
+            },
+            "UpdateEnhancedMeasurementSettings": {
+              "methods": [
+                "update_enhanced_measurement_settings"
+              ]
+            },
+            "CreateFirebaseLink": {
+              "methods": [
+                "create_firebase_link"
+              ]
+            },
+            "UpdateFirebaseLink": {
+              "methods": [
+                "update_firebase_link"
+              ]
+            },
+            "DeleteFirebaseLink": {
+              "methods": [
+                "delete_firebase_link"
+              ]
+            },
+            "ListFirebaseLinks": {
+              "methods": [
+                "list_firebase_links"
+              ]
+            },
+            "GetGlobalSiteTag": {
+              "methods": [
+                "get_global_site_tag"
+              ]
+            },
+            "CreateGoogleAdsLink": {
+              "methods": [
+                "create_google_ads_link"
+              ]
+            },
+            "UpdateGoogleAdsLink": {
+              "methods": [
+                "update_google_ads_link"
+              ]
+            },
+            "DeleteGoogleAdsLink": {
+              "methods": [
+                "delete_google_ads_link"
+              ]
+            },
+            "ListGoogleAdsLinks": {
+              "methods": [
+                "list_google_ads_links"
+              ]
+            },
+            "GetDataSharingSettings": {
+              "methods": [
+                "get_data_sharing_settings"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
