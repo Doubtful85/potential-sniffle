@@ -1,0 +1,42 @@
+inherit_gem:
+  google-style: google-style.yml
+
+AllCops:
+  Exclude:
+    - "acceptance/**/*"
+    - "integration/**/*"
+    - "google-cloud-error_reporting.gemspec"
+    - "lib/google/devtools/**/*"
+    - "lib/google/cloud/error_reporting/v1beta1/**/*"
+    - "lib/google/cloud/error_reporting/v1beta1.rb"
+    - "Rakefile"
+    - "support/**/*"
+    - "test/**/*"
+
+Documentation:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+Lint/RescueException:
+  Exclude:
+    - "lib/google/cloud/error_reporting/middleware.rb"
+Lint/AmbiguousOperator:
+  Exclude:
+    - "lib/google/cloud/error_reporting/project.rb"
+Metrics/BlockLength:
+  Exclude:
+    - "lib/google-cloud-error_reporting.rb"
+Metrics/ClassLength:
+  Enabled: false
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-error_reporting.rb"
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
