@@ -1,0 +1,40 @@
+inherit_gem:
+  google-style: google-style.yml
+
+AllCops:
+  Exclude:
+    - "google-cloud-bigquery-storage-v1.gemspec"
+    - "lib/**/*_pb.rb"
+    - "proto_docs/**/*"
+    - "test/**/*"
+    - "acceptance/**/*"
+    - "Rakefile"
+
+Metrics/AbcSize:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+Metrics/ClassLength:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+Metrics/LineLength:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+    - "google-cloud-bigquery-storage-v1.gemspec"
+Metrics/MethodLength:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+Metrics/PerceivedComplexity:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-bigquery-storage-v1.rb"
+Style/CaseEquality:
+  Exclude:
+    - "lib/google/cloud/bigquery/storage/v1/big_query_read/*.rb"
+    - "lib/google/cloud/bigquery/storage/v1.rb"
+Style/ModuleFunction:
+  Enabled: false
