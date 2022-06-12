@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "2.0.0",
+        "dockerImage": "googleapis/artman@sha256:b3b47805231a305d0f40c4bf069df20f6a2635574e6d4259fac651d3f9f6e098"
+      }
+    },
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "bfb4ac7296cdebe457a7bcb093b7ec4755a616e0"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "5a90d467aa65e7f038f87585e8fbb45d74475e7c",
+        "internalRef": "312088359"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "errorreporting",
+        "apiVersion": "v1beta1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/devtools/clouderrorreporting/artman_errorreporting.yaml"
+      }
+    }
+  ]
+}

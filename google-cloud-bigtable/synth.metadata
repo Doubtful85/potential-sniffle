@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "2.0.0",
+        "dockerImage": "googleapis/artman@sha256:b3b47805231a305d0f40c4bf069df20f6a2635574e6d4259fac651d3f9f6e098"
+      }
+    },
+    {
+      "git": {
+        "name": ".",
+        "remote": "git@github.com:googleapis/google-cloud-ruby.git",
+        "sha": "ee84565e71a81f3492f5ba60a17d5080cbfacb84"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "973c671823c076165b2371cda0174586d4078b0d",
+        "internalRef": "313004561"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "bigtable",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/bigtable/artman_bigtable.yaml"
+      }
+    },
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "bigtableadmin",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/bigtable/admin/artman_bigtableadmin.legacy.yaml"
+      }
+    }
+  ]
+}

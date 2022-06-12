@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "2.0.0",
+        "dockerImage": "googleapis/artman@sha256:b3b47805231a305d0f40c4bf069df20f6a2635574e6d4259fac651d3f9f6e098"
+      }
+    },
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "dcba8409c5f3fd5204081b6b1b8c032d7dce3f90"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "eafa840ceec23b44a5c21670288107c661252711",
+        "internalRef": "313488995"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "pubsub",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/pubsub/artman_pubsub.yaml"
+      }
+    }
+  ]
+}
