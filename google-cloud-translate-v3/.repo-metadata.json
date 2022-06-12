@@ -1,0 +1,11 @@
+{
+    "api_id": "translate.googleapis.com",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-translate-v3/latest",
+    "distribution_name": "google-cloud-translate-v3",
+    "language": "ruby",
+    "name": "translate",
+    "name_pretty": "Cloud Translation V3 API",
+    "product_documentation": "https://cloud.google.com/translate",
+    "repo": "googleapis/google-cloud-ruby",
+    "requires_billing": true
+}
