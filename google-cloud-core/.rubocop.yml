@@ -1,0 +1,19 @@
+inherit_gem:
+  google-style: google-style.yml
+
+AllCops:
+  Exclude:
+    - "test/**/*"
+
+Documentation:
+  Enabled: false
+
+Metrics/ClassLength:
+  Exclude:
+    - "lib/google/cloud/config.rb"
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-core.rb"
+Style/CaseEquality:
+  Exclude:
+    - "lib/google/cloud/config.rb"
