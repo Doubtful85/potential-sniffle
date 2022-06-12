@@ -1,0 +1,71 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "c830c7d6f7b45ddb90cafc77707b1ecf323e600b"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "468a94a87b9f80d22d1f5e3076d5bab73a5c996f",
+        "internalRef": "346664095"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "managedidentities",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic-generator-ruby"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "gapic_metadata.json",
+    "google-cloud-managed_identities-v1.gemspec",
+    "lib/google-cloud-managed_identities-v1.rb",
+    "lib/google/cloud/managed_identities/v1.rb",
+    "lib/google/cloud/managed_identities/v1/managed_identities_service.rb",
+    "lib/google/cloud/managed_identities/v1/managed_identities_service/client.rb",
+    "lib/google/cloud/managed_identities/v1/managed_identities_service/credentials.rb",
+    "lib/google/cloud/managed_identities/v1/managed_identities_service/operations.rb",
+    "lib/google/cloud/managed_identities/v1/managed_identities_service/paths.rb",
+    "lib/google/cloud/managed_identities/v1/version.rb",
+    "lib/google/cloud/managedidentities/v1/managed_identities_service_pb.rb",
+    "lib/google/cloud/managedidentities/v1/managed_identities_service_services_pb.rb",
+    "lib/google/cloud/managedidentities/v1/resource_pb.rb",
+    "proto_docs/README.md",
+    "proto_docs/google/api/field_behavior.rb",
+    "proto_docs/google/api/resource.rb",
+    "proto_docs/google/cloud/managedidentities/v1/managed_identities_service.rb",
+    "proto_docs/google/cloud/managedidentities/v1/resource.rb",
+    "proto_docs/google/longrunning/operations.rb",
+    "proto_docs/google/protobuf/any.rb",
+    "proto_docs/google/protobuf/duration.rb",
+    "proto_docs/google/protobuf/empty.rb",
+    "proto_docs/google/protobuf/field_mask.rb",
+    "proto_docs/google/protobuf/timestamp.rb",
+    "proto_docs/google/rpc/status.rb",
+    "test/google/cloud/managed_identities/v1/managed_identities_service_operations_test.rb",
+    "test/google/cloud/managed_identities/v1/managed_identities_service_paths_test.rb",
+    "test/google/cloud/managed_identities/v1/managed_identities_service_test.rb",
+    "test/helper.rb"
+  ]
+}
