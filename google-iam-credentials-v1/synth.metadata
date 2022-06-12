@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "0a02ea3da92da1ac0a5f13e0b5c11f6dc7018f7e"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "bdab50fe10ce3190812697e06f2e860780e9095e",
+        "internalRef": "347327128"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "iamcredentials",
+        "apiVersion": "v1",
+        "language": "ruby",
+        "generator": "gapic-generator-ruby"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "google-iam-credentials-v1.gemspec",
+    "lib/google-iam-credentials-v1.rb",
+    "lib/google/iam/credentials/v1.rb",
+    "lib/google/iam/credentials/v1/common_pb.rb",
+    "lib/google/iam/credentials/v1/iam_credentials.rb",
+    "lib/google/iam/credentials/v1/iam_credentials/client.rb",
+    "lib/google/iam/credentials/v1/iam_credentials/credentials.rb",
+    "lib/google/iam/credentials/v1/iam_credentials/paths.rb",
+    "lib/google/iam/credentials/v1/iamcredentials_pb.rb",
+    "lib/google/iam/credentials/v1/iamcredentials_services_pb.rb",
+    "lib/google/iam/credentials/v1/version.rb",
+    "proto_docs/README.md",
+    "proto_docs/google/api/field_behavior.rb",
+    "proto_docs/google/api/resource.rb",
+    "proto_docs/google/iam/credentials/v1/common.rb",
+    "proto_docs/google/protobuf/duration.rb",
+    "proto_docs/google/protobuf/timestamp.rb",
+    "test/google/iam/credentials/v1/iam_credentials_paths_test.rb",
+    "test/google/iam/credentials/v1/iam_credentials_test.rb",
+    "test/helper.rb"
+  ]
+}
