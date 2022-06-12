@@ -1,0 +1,57 @@
+#footer {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#footer ul.footer-links {
+  list-style: none;
+  text-align: center;
+}
+
+#footer ul.footer-links li {
+  display: inline;
+  text-align: center;
+}
+
+#footer ul.footer-links li a {
+    display: inline-block;
+    padding: 10px;
+}
+
+#main {
+     padding-top: 50px;
+}
+
+#search {
+    top: 50px;
+}
+
+#nav {
+     top: 90px;
+}
+
+#main #header #menu {
+    margin-right: 50px
+}
+
+@media only screen and (min-width: 50em) {
+
+    #main {
+         padding-top: 70px;
+    }
+
+    #search {
+        top: 80px;
+    }
+
+    #nav {
+         top: 120px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+    #nav {
+         top: 70px;
+    }
+}

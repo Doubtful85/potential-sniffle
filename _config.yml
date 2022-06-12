@@ -1,0 +1,17 @@
+# Site settings
+title: google-cloud-ruby
+description: >
+  Google Cloud Client Library for Ruby - an idiomatic, intuitive,
+  and natural way for Ruby developers to integrate with Google
+  Cloud Platform services, like Cloud Datastore and Cloud Storage.
+baseurl: "/google-cloud-ruby"
+url: "http://googlecloudplatform.github.io"
+# twitter_username: gcloud???
+github_username:  GoogleCloudPlatform
+
+# Build settings
+markdown: kramdown
+
+# Include all YARD files
+include:
+- _index.html
