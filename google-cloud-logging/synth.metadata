@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "2.0.0",
+        "dockerImage": "googleapis/artman@sha256:b3b47805231a305d0f40c4bf069df20f6a2635574e6d4259fac651d3f9f6e098"
+      }
+    },
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "2c43b1eed7366fa2ec346d97194c35a9c3d6d498"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "ca1372c6d7bcb199638ebfdb40d2b2660bab7b88",
+        "internalRef": "315548189"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "logging",
+        "apiVersion": "v2",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/logging/artman_logging.yaml"
+      }
+    }
+  ]
+}
