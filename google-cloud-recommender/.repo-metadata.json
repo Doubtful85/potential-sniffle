@@ -1,0 +1,11 @@
+{
+    "api_id": "recommender.googleapis.com",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-recommender/latest",
+    "distribution_name": "google-cloud-recommender",
+    "language": "ruby",
+    "name": "recommender",
+    "name_pretty": "Recommender API",
+    "product_documentation": "https://cloud.google.com/recommender",
+    "repo": "googleapis/google-cloud-ruby",
+    "requires_billing": true
+}
