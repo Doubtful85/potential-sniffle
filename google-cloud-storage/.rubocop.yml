@@ -1,0 +1,36 @@
+inherit_gem:
+  google-style: google-style.yml
+
+AllCops:
+  Exclude:
+    - "acceptance/**/*"
+    - "conformance/**/*"
+    - "google-cloud-storage.gemspec"
+    - "Rakefile"
+    - "test/**/*"
+    - "support/**/*"
+
+Documentation:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+Layout/SpaceAroundOperators:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Naming/FileName:
+  Exclude:
+    - "lib/google-cloud-storage.rb"
+Style/IfUnlessModifier:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/UnpackFirst:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
