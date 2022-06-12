@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/google-cloud-ruby.git",
+        "sha": "ede929c4c37760c903a53cc4916f82bdb54336ea"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "e06a4c4fcf75f34d0d672400a204877849137b8b"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "notebooks",
+        "apiVersion": "v1beta1",
+        "language": "ruby",
+        "generator": "gapic-generator-ruby"
+      }
+    }
+  ],
+  "generatedFiles": [
+    ".gitignore",
+    ".repo-metadata.json",
+    ".rubocop.yml",
+    ".yardopts",
+    "AUTHENTICATION.md",
+    "CHANGELOG.md",
+    "Gemfile",
+    "LICENSE.md",
+    "README.md",
+    "Rakefile",
+    "google-cloud-notebooks-v1beta1.gemspec",
+    "lib/google-cloud-notebooks-v1beta1.rb",
+    "lib/google/cloud/notebooks/v1beta1.rb",
+    "lib/google/cloud/notebooks/v1beta1/environment_pb.rb",
+    "lib/google/cloud/notebooks/v1beta1/instance_pb.rb",
+    "lib/google/cloud/notebooks/v1beta1/notebook_service.rb",
+    "lib/google/cloud/notebooks/v1beta1/notebook_service/client.rb",
+    "lib/google/cloud/notebooks/v1beta1/notebook_service/credentials.rb",
+    "lib/google/cloud/notebooks/v1beta1/notebook_service/operations.rb",
+    "lib/google/cloud/notebooks/v1beta1/notebook_service/paths.rb",
+    "lib/google/cloud/notebooks/v1beta1/service_pb.rb",
+    "lib/google/cloud/notebooks/v1beta1/service_services_pb.rb",
+    "lib/google/cloud/notebooks/v1beta1/version.rb",
+    "proto_docs/README.md",
+    "proto_docs/google/api/field_behavior.rb",
+    "proto_docs/google/api/resource.rb",
+    "proto_docs/google/cloud/notebooks/v1beta1/environment.rb",
+    "proto_docs/google/cloud/notebooks/v1beta1/instance.rb",
+    "proto_docs/google/cloud/notebooks/v1beta1/service.rb",
+    "proto_docs/google/longrunning/operations.rb",
+    "proto_docs/google/protobuf/any.rb",
+    "proto_docs/google/protobuf/duration.rb",
+    "proto_docs/google/protobuf/empty.rb",
+    "proto_docs/google/protobuf/timestamp.rb",
+    "proto_docs/google/rpc/status.rb",
+    "test/google/cloud/notebooks/v1beta1/notebook_service_operations_test.rb",
+    "test/google/cloud/notebooks/v1beta1/notebook_service_paths_test.rb",
+    "test/google/cloud/notebooks/v1beta1/notebook_service_test.rb",
+    "test/helper.rb"
+  ]
+}
