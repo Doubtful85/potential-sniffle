@@ -1,0 +1,11 @@
+{
+    "api_id": "texttospeech.googleapis.com",
+    "client_documentation": "https://googleapis.dev/ruby/google-cloud-text_to_speech/latest",
+    "distribution_name": "google-cloud-text_to_speech",
+    "language": "ruby",
+    "name": "texttospeech",
+    "name_pretty": "Cloud Text-to-Speech API",
+    "product_documentation": "https://cloud.google.com/text-to-speech",
+    "repo": "googleapis/google-cloud-ruby",
+    "requires_billing": true
+}
