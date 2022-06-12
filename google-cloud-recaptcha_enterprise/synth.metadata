@@ -1,0 +1,39 @@
+{
+  "updateTime": "2019-09-25T10:41:14.650537Z",
+  "sources": [
+    {
+      "generator": {
+        "name": "artman",
+        "version": "0.37.1",
+        "dockerImage": "googleapis/artman@sha256:6068f67900a3f0bdece596b97bda8fc70406ca0e137a941f4c81d3217c994a80"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "662bfb2666b4310027475928234f1355dcf8a935",
+        "internalRef": "270960038"
+      }
+    },
+    {
+      "template": {
+        "name": "ruby_library",
+        "origin": "synthtool.gcp",
+        "version": "2019.5.2"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "client": {
+        "source": "googleapis",
+        "apiName": "recaptchaenterprise",
+        "apiVersion": "v1beta1",
+        "language": "ruby",
+        "generator": "gapic",
+        "config": "google/cloud/recaptchaenterprise/artman_recaptchaenterprise_v1beta1.yaml"
+      }
+    }
+  ]
+}
